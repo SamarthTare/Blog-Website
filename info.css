@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    border: 2px solid #333; /* Border around the main container */
+}
+
+/* Blog Input Form Styles */
+#blog-input-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#type{
+    height: 35px;
+}
+
+#blog-input-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#blog-input-form input,
+#blog-input-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#blog-input-form input[type="file"] {
+    padding: 3px;
+}
+
+#blog-input-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#blog-input-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #blog-input-form form {
+        padding: 10px;
+    }
+
+    #blog-input-form input,
+    #blog-input-form textarea {
+        font-size: 14px;
+    }
+
+    #blog-input-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    #blog-input-form label {
+        font-size: 14px;
+    }
+
+    #blog-input-form button {
+        padding: 7px;
+    }
+}

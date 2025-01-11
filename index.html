@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="above">
+            <h1>Creative<span>Corner</span></h1>
+            <div  class="star">
+            <button id="login-button">Login</button>
+            <button id="sing-button">Sign Up</button>
+          
+            <button id="add-blog-button" onclick="location.href='info.html';" >AddBlog</button>
+            <button id="user-button" style="display: none;"></button>
+            
+            </div>
+        </div>
+        <div class="bottom">
+            <h1>Creative Corner Blog</h1>
+            <p>Journey Through Ideas: Expand Your Horizons Daily</p>
+        </div>
+    </header>
+
+    <nav>
+        <div id="nav">
+            <a href="#All">All</a>
+            <a href="#tech">Tech</a>
+            <a href="#life">Lifestyle</a>
+            <a href="#creative">Creative</a>
+            <a href="#design">Design</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="container">
+            
+        </div>
+           
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>Creative<span>Corner</span></h1>
+            </div>
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h2>Follow Us</h2>
+                <div id="left">
+                    <a href="#"><img src="./image/x.svg" alt="X" ></a>
+                    <a href="#"><img src="./image/ti.svg" alt="Twitter" ></a>
+                    <a href="#"><img src="./image/instragram.svg" alt="Instagram" ></a>
+                    <a href="#"><img src="./image/in.svg" alt="LinkedIn" ></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@creativecorner.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&#169; Creative Corner All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login CreativeCorner</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input id="username" type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input id="password" type="password" id="password" name="password" required>
+
+                <button id="login" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="sing-modal" class="modal2">
+        <div class="modal2-content">
+            <span class="close-button2">&times;</span>
+            <h2>Login CreativeCorner</h2>
+            <form>
+                <label for="username2">Username:</label>
+                <input id="username2" type="text" name="username2" required>
+              
+                <label for="email">Email:</label>
+                <input id="email" type="email" id="email" name="email" required>
+
+                <label for="password2">Password:</label>
+                <input id="password2" type="password"  name="password2" required>
+
+                <button id="sing" type="submit">Sing Up</button>
+            </form>
+        </div>
+    </div>
+
+
+   
+
+
+    <script type="module" src="script.js"></script>
+   
+</body>
+</html>
