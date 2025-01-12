@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const newPost = {
             id: blogPosts.length,
-            type: type,
+            type: type.toUpperCase(),
             title: title,
             date: new Date().toLocaleDateString(),
             description: description,
