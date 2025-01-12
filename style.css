@@ -60,6 +60,8 @@ h1 > span {
     color: white;
 }
 
+
+
 nav {
     width: 100vw;
     display: flex;
@@ -484,6 +486,14 @@ footer {
     
     .card img.img1 {
         height: auto;
+    }
+
+    #add-blog-button{
+        width: 90px;
+    }
+    
+    #user-button{
+        width: 40px;
     }
 }
 .star{
